@@ -3,7 +3,7 @@ import 'dotenv/config';
 import { Client, GatewayIntentBits, PermissionsBitField } from 'discord.js';
 
 const TOKEN = process.env.DISCORD_TOKEN;
-const TARGET_USER_ID = '1369318122305355859'; // boscat 572917219340714055
+const TARGET_USER_ID = '572917219340714055'; // boscat 572917219340714055
 
 
 
@@ -73,7 +73,7 @@ client.once('ready', () => {
                 console.error(`❌ Error in guild ${guild.name}:`, err);
             }
         }
-    }, 2 * 1000);
+    }, 2 * 60 * 60 * 1000);
 });
 
 client.login(TOKEN);
