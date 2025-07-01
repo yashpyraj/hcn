@@ -3,7 +3,8 @@ import 'dotenv/config';
 import { Client, GatewayIntentBits, PermissionsBitField } from 'discord.js';
 
 const TOKEN = process.env.DISCORD_TOKEN;
-const TARGET_USER_ID = '1369318122305355859'; // boscat
+const TARGET_USER_ID = '572917219340714055'; // boscat 572917219340714055
+
 
 const jokes = [
     "Why don’t French people play hide and seek? Good luck hiding when you say 'I baguette where I hid.' 🥖",
@@ -71,7 +72,7 @@ client.once('ready', () => {
                 console.error(`❌ Error in guild ${guild.name}:`, err);
             }
         }
-    }, 2 * 60 * 60 * 1000);
+    }, 2 * 1000);
 });
 
 client.login(TOKEN);
