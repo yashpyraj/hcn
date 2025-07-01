@@ -1,9 +1,9 @@
-const { Client, GatewayIntentBits, PermissionsBitField } = require('discord.js');
 
-require('dotenv').config();
+import 'dotenv/config';
+import { Client, GatewayIntentBits, PermissionsBitField } from 'discord.js';
+
 const TOKEN = process.env.DISCORD_TOKEN;
-
-const TARGET_USER_ID = '1369318122305355859'; // Replace with real ID
+const TARGET_USER_ID = '1369318122305355859'; // boscat
 
 const jokes = [
     "Why don’t French people play hide and seek? Good luck hiding when you say 'I baguette where I hid.' 🥖",
@@ -38,7 +38,6 @@ const jokes = [
     "HVN tried to roast boscat once. HVN now delivers her jokes instead."
 ];
 
-
 const client = new Client({
     intents: [
         GatewayIntentBits.Guilds,
@@ -72,7 +71,7 @@ client.once('ready', () => {
                 console.error(`❌ Error in guild ${guild.name}:`, err);
             }
         }
-    }, 2 * 60 * 60 * 1000); // Every 2 hours
+    }, 2 * 60 * 60 * 1000);
 });
 
 client.login(TOKEN);
