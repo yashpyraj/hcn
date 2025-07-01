@@ -3,7 +3,8 @@ import 'dotenv/config';
 import { Client, GatewayIntentBits, PermissionsBitField } from 'discord.js';
 
 const TOKEN = process.env.DISCORD_TOKEN;
-const TARGET_USER_ID = '572917219340714055'; // boscat 572917219340714055
+const TARGET_USER_ID = '1369318122305355859'; // boscat 572917219340714055
+
 
 
 const jokes = [
