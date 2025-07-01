@@ -1,6 +1,24 @@
 {
+  "name": "hvn",
+  "version": "1.0.0",
+  "description": "Discord bot to manage war status via emoji reactions",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "register-commands": "node register-commands.js"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "slash-commands",
+    "emoji-reactions",
+    "railway"
+  ],
+  "author": "Yash Raj",
+  "license": "MIT",
   "dependencies": {
-    "discord.js": "^14.21.0",
-    "dotenv": "^17.0.1"
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5"
   }
 }
